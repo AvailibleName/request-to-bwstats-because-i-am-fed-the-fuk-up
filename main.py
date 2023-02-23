@@ -3,8 +3,14 @@ import threading
 from threading import Thread, RLock
 import asyncio
 import requests
+from flask import Blueprint
 
 print("line 5")
+
+
+
+views = Blueprint(__name__, "main")
+
 
 
 def the_thing():
